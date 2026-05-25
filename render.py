@@ -9,9 +9,11 @@
 # For inquiries contact  george.drettakis@inria.fr
 #
 
+import os
+import sys
+os.add_dll_directory(os.path.join(sys.prefix, 'Lib', 'site-packages', 'torch', 'lib'))
 import torch
 from scene import Scene
-import os
 from tqdm import tqdm
 from os import makedirs
 from gaussian_renderer import render

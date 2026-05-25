@@ -10,6 +10,8 @@
 #
 
 import os
+import sys
+os.add_dll_directory(os.path.join(sys.prefix, 'Lib', 'site-packages', 'torch', 'lib'))
 import torch
 from random import randint
 from utils.loss_utils import l1_loss, ssim
